@@ -1,0 +1,32 @@
+.call-button {
+    padding: 10px;
+    background-color: #39ff14;
+    color: #000;
+
+    font-weight: 800;
+    font-size: 16px;
+    font-family: Raleway;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+@media (max-width: 1024px) {
+  .call-button {
+    width: 90%;
+    padding: 10px;
+    background-color: #39ff14;
+    color: #000;
+
+    font-weight: 800;
+    font-size: 16px;
+    font-family: Raleway;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

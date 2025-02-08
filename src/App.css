@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  color: white;
+  background-color: #1B1B1B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+}
+
+#home, #about, #services, #contact {
+  border: none;
+}
+

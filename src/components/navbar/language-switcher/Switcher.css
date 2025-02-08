@@ -1,0 +1,43 @@
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+    font-weight: 400;
+  }
+  
+  .label {
+    color: white;
+    margin: 0 8px;
+  }
+  
+  .toggle {
+    width: 40px;
+    height: 20px;
+    background: #777;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .toggle-thumb {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle.active {
+    background: #4caf50;
+  }
+  
+  .toggle.active .toggle-thumb {
+    transform: translateX(20px);
+  }
+  

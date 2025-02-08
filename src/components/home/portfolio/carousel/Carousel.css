@@ -1,0 +1,31 @@
+.project-name {
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 800;
+
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.portfolio-control-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 40vw;
+    
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.portfolio-link{
+  text-decoration: none;
+  text-decoration: none;
+  font-family: Raleway;
+  
+
+}
+
+.portfolio-link h1{
+  color: white; 
+}
+

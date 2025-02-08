@@ -1,0 +1,93 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 24px;
+  color: white;
+
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 35px;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: 0.4s;
+  color: white;
+
+  &:active {
+    color: #06dc22;
+  }
+
+  &:hover {
+    font-size: 26px;
+    cursor: pointer;
+  }
+}
+
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.hamburger-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.523);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Центрируем элементы по горизонтали */
+    gap: 20px;
+    width: 100%; /* Ширина на весь экран */
+    height: 100vh; /* Высота на весь экран */
+    position: fixed; /* Фиксированное позиционирование */
+    top: -100vh; /* Начинаем за пределами экрана */
+    left: 0;
+    background-color: #111111e7; /* Цвет фона */
+    opacity: 0; /* Начальная прозрачность */
+    visibility: hidden; /* Скрываем */
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Плавный переход */
+    z-index: 1000; /* Убедимся, что навбар поверх других элементов */
+  }
+
+  .nav-links.active {
+    top: 0; /* Сдвигаем навбар вниз */
+    opacity: 1; /* Показываем */
+    visibility: visible; /* Делаем видимым */
+    backdrop-filter: blur(5px);
+  }
+
+  .hamburger-icon {
+    display: flex;
+    position: fixed;
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+    z-index: 1001; /* Убедимся, что иконка поверх навбара */
+
+    opacity: 0.8;
+
+    background-color: black;
+    padding: 7px 10px;
+    border-radius: 12px;
+    /* border: 0.5px solid #06DC22; */
+    
+  }
+}

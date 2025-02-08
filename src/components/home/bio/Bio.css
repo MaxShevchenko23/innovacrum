@@ -1,0 +1,89 @@
+.bio {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: left;
+  h1 {
+    width: 80%;
+    font-family: Inter, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .pm {
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #06dc22;
+  }
+
+  p {
+    font-family: Raleway, sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.call-button {
+  
+  background-color: #06dc22;
+  border: none;
+  color: white;
+  padding: 0.8rem 3.5rem;
+
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .bio {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-family: Inter, sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-family: Raleway, sans-serif;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      color: #06dc22;
+    }
+
+    p {
+      font-family: Raleway, sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+
+      margin-top: 1rem;
+      font-weight: 500;
+      padding: 10px 80px;
+    }
+  }
+
+  .call-button {
+    background-color: #06dc22;
+    border: none;
+    color: white;
+    padding: 0.8rem 3.5rem;
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
