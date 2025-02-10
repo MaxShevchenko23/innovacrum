@@ -15,8 +15,10 @@ i18n.use(initReactI18next).init({
         about: "About me",
         portfolio: "Portfolio",
         contacts: "Contacts",
+        Manifesto: "Manifest",
         phone:'Phone:',
         email:'Email:',
+
         hi: "HI, I'M MATTEO",
         projectManager: "PROJECT MANAGER",
         bio: "My mission is to unite teams, optimize processes, and ensure the timely implementation of ideas that bring results.",
@@ -63,7 +65,7 @@ i18n.use(initReactI18next).init({
         hardSkillsInfo10:
           "Storytelling and Content Creation",
         followMe: "Follow me:",
-        manifesto: "INNOVACRUM MANIFESTO",
+        manifesto: "INNOVACRUM MANIFEST",
         manifestoBriefDesc: "Toward a New Authentic Meaning of Innovation",
         manifestoTitle1:'Beyond Reflection, Toward Authenticity',
         manifestoDesc1:'Our contemporary world is inundated with “mirrors” and representations that often lose their connection to reality. At Innovacrum, we believe that innovation should not be confined to a play of reflections or mere self-referential simulacra. Instead, it must serve to break these mirrors and reconnect with the most profound human needs.',
@@ -93,7 +95,7 @@ i18n.use(initReactI18next).init({
         about: "Su di me",
         portfolio: "Portafoglio",
         contacts: "Contatti",
-        welcome: "Contatti",
+        Manifesto: "Manifesto",
         phone:'Telefono:',
         email:'Email:',
         hi: "CIAO SONO MATTEO",

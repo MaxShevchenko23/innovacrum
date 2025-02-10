@@ -19,6 +19,8 @@ const Navbar = () => {
   const handleScrollToSection = (sectionId) => {
     if (["about", "portfolio", "contacts"].includes(sectionId) && currentUrl !== "/") {
       window.location.href = `/#${sectionId}`;
+      window.scrollTo(0, 0);
+
     } else {
       const element = document.getElementById(sectionId);
       if (element) {
