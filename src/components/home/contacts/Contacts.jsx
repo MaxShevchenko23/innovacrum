@@ -62,7 +62,7 @@ const Contacts = () => {
             required
           />
 
-          <label for="message">Message</label>
+          <label for="message">Describe your necessity</label>
           <textarea id="message" name="message" placeholder="Enter"></textarea>
 
           <button type="submit">{t("sendMessage")}</button>
@@ -83,7 +83,7 @@ const Contacts = () => {
       </div>
       <div className="follow-me">
         <h1>{t("followMe")}</h1>
-        <img src={linkedin} alt="link" />
+        <a href="https://www.linkedin.com/in/matteo-shermadhi-128752292/" target="_blank"><img src={linkedin} alt="link" /></a>
       </div>
     </div>
   );

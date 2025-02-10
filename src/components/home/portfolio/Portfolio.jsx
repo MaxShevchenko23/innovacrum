@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <h1>
-        <span>“</span>{t('portfolio').toUpperCase()}<span>”</span>
+        {t('portfolio').toUpperCase()}
       </h1>
       <Carousel />
     </div>

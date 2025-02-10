@@ -32,11 +32,11 @@ const About = () => {
       <Slider ref={sliderRef} {...settings} className="about-slider">
         <div className="aboutMe slide">
           <h2 className="about-header">{t("about").toUpperCase()}</h2>
-          <div className="content">{t("aboutMe")}</div>
+          <div className="content justify">{t("aboutMe")}</div>
         </div>
         <div className="experience slide">
           <h2 className="about-header">{t("experience").toUpperCase()}</h2>
-          <div className="content">
+          <div className="content justify">
             <ul className="about-list">
               <li>{t("experienceInfo1")}</li>
               <li>{t("experienceInfo2")}</li>
@@ -50,19 +50,19 @@ const About = () => {
         </div>
         <div className="softSkills slide">
           <h2 className="about-header">{t("softSkills").toUpperCase()}</h2>
-          <div className="content">{t("softSkillsInfo")}</div>
+          <div className="content justify">{t("softSkillsInfo")}</div>
         </div>
         <div className="hardSkills slide">
           <h2 className="about-header">{t("hardSkills").toUpperCase()}</h2>
           <div className="content">
-            <ul className="about-list">
-              <li className="hard-skill">{t("hardSkillsInfo1")}</li>
-              <li className="hard-skill">{t("hardSkillsInfo2")}</li>
-              <li className="hard-skill">{t("hardSkillsInfo3")}</li>
-              <li className="hard-skill">{t("hardSkillsInfo4")}</li>
-              <li className="hard-skill">{t("hardSkillsInfo5")}</li>
-              <li className="hard-skill">{t("hardSkillsInfo6")}</li>
-              <li className="hard-skill">{t("hardSkillsInfo7")}</li>
+            <ul className="about-list hard-skills">
+              <li className="hard-skill align-left">{t("hardSkillsInfo1")}</li>
+              <li className="hard-skill align-left">{t("hardSkillsInfo2")}</li>
+              <li className="hard-skill align-left">{t("hardSkillsInfo3")}</li>
+              <li className="hard-skill align-left">{t("hardSkillsInfo4")}</li>
+              <li className="hard-skill align-left">{t("hardSkillsInfo5")}</li>
+              <li className="hard-skill align-left">{t("hardSkillsInfo6")}</li>
+              <li className="hard-skill align-left">{t("hardSkillsInfo7")}</li>
             </ul>
           </div>
         </div>
