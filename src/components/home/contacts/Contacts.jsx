@@ -15,10 +15,14 @@ const Contacts = () => {
 
     emailjs
       .sendForm(
-        "service_zdjcajw",
-        "template_fxbcoxi",
+        // "service_zdjcajw",
+        // "template_fxbcoxi",
+        // form.current,
+        // "qq9uky3qVxbhWqjsI"
+        "service_n1cvpn9",
+        "template_awl2txc",
         form.current,
-        "qq9uky3qVxbhWqjsI"
+        "CL2hIrcU2oCzOBJgj"
       )
       .then(
         () => alert("Message sent! I will contact you as soon as possible."),
@@ -79,7 +83,6 @@ const Contacts = () => {
       </div>
       <div className="follow-me">
         <h1>{t("followMe")}</h1>
-        <img src={insta} alt="inst" />
         <img src={linkedin} alt="link" />
       </div>
     </div>
