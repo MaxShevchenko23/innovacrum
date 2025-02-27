@@ -13,20 +13,25 @@ const Contacts = () => {
   function handleSendMessage(e) {
     e.preventDefault();
 
+    const formData = new FormData(form.current);
+
+    const templateParams = {
+      from_name: formData.get("from_name"),
+      email: formData.get("email"),
+      company: formData.get("company"),
+      message: formData.get("email") + `\n` + formData.get("message"),
+    };
+
     emailjs
-      .sendForm(
-        // "service_zdjcajw",
-        // "template_fxbcoxi",
-        // form.current,
-        // "qq9uky3qVxbhWqjsI"
-        "service_n1cvpn9",
-        "template_awl2txc",
-        form.current,
-        "CL2hIrcU2oCzOBJgj"
+      .send(
+      "service_96793x6",
+      "template_awl2txc",
+      templateParams,
+      'CL2hIrcU2oCzOBJgj'
       )
       .then(
-        () => alert("Message sent! I will contact you as soon as possible."),
-        (error) => alert("Error: " + error.text)
+      () => alert("Message sent! I will contact you as soon as possible."),
+      (error) => alert("Error: " + error)
       );
   }
 
@@ -35,11 +40,11 @@ const Contacts = () => {
       <div class="form-container">
         <form ref={form} onSubmit={handleSendMessage}>
           <h1 className="send-message">{t("sendMessage")}</h1>
-          <label for="name">Name*</label>
+          <label for="from_name">Name*</label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="from_name"
+            name="from_name"
             placeholder="Enter"
             required
           />

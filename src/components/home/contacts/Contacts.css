@@ -3,6 +3,7 @@
   flex-direction: row-reverse;
   align-items: baseline;
   gap: 17vw;
+  margin-bottom: 50px;
 }
 
 .form-container {
